@@ -1,0 +1,10 @@
+.features-section {
+  position: relative;
+  height: 2500px;
+}
+
+.features {
+  &__title {
+    color: $color-grey;
+  }
+}

@@ -1,0 +1,11 @@
+.popup-request {
+  color: $color-white;
+
+  &__title {
+    padding-top: 26px;
+    margin-bottom: 115px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}

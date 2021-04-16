@@ -6,27 +6,441 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
-  <title>Title</title>
+  <title>Gart | Бурение скважин</title>
 </head>
 
 <body>
   <header class="header">
     <a class="logo header__logo" aria-label="logo">
-      <svg>
+      <svg width="143" height="57">
         <use xlink:href="images/sprites/sprite-multi.svg#logo"></use>
       </svg>
     </a>
+    <ul class="header__social social list-reset">
+      <span class="social__text">Напишите нам</span>
+      <li class="social__item social__item--viber"><a href="#" class="social__link">Viber</a></li>
+      <li class="social__item social__item--whatsapp"><a href="#" class="social__link">Whatsapp</a></li>
+      <li class="social__item social__item--telegram"><a href="#" class="social__link">Telegram</a></li>
+    </ul>
+    <a href="tel:+73952799343" class="header__phone phone">
+      <svg width="19" height="19">
+        <use xlink:href="images/sprites/sprite-multi.svg#headphone"></use>
+      </svg>
+      +7 (3952) <span>799-343</span>
+    </a>
+    <div class="header__btns">
+      <button class="btn-reset header__btn header__btn--left">
+        <svg width="22" height="26">
+          <use xlink:href="images/sprites/sprite-multi.svg#deep"></use>
+        </svg>
+        <span>Узнать глубину на участке</span>
+      </button>
+      <button class="btn-reset header__btn header__btn--right">
+        <svg width="26" height="26">
+          <use xlink:href="images/sprites/sprite-multi.svg#cost"></use>
+        </svg>
+        <span>Рассчитать стоимость бурения</span>
+      </button>
+    </div>
+
+    <div class="header__mobile-btns">
+      <button class="btn-reset header__mobile-btn header__mobile-btn--left" aria-label="Рассчитать стоимость" data-popup="popup-request">
+        <svg width="26" height="26">
+          <use xlink:href="images/sprites/sprite-multi.svg#cost"></use>
+        </svg>
+      </button>
+
+      <button class="btn-reset header__mobile-btn header__mobile-btn--right" aria-label="Меню" data-popup="popup-menu">
+        <svg width="19" height="9">
+          <use xlink:href="images/sprites/sprite-multi.svg#burger"></use>
+        </svg>
+      </button>
+    </div>
   </header>
   <main class="main">
-    <section>
-      <div class="container">
-        Sect 1
+    <section class="offer-section">
+      <div class="dekor offer-section__bg-whitegrey"></div>
+      <div class="container offer-section__container">
+        <h1 class="offer__title">
+          <p class="offer__title--accent">КАЧЕСТВЕННОЕ</p>
+          <p>бурение скважин на воду</p>
+        </h1>
+
+        <div class="offer__description offer-list">
+          <div class="offer-list__item">
+            <div class="offer-list__item-icon">
+              <svg width="10" height="7">
+                <use xlink:href="images/sprites/sprite-multi.svg#check"></use>
+              </svg>
+            </div>
+            <span>Бурим Иркутске и Иркутской области</span>
+          </div>
+          <div class="offer-list__item">
+            <div class="offer-list__item-icon">
+              <svg width="10" height="7">
+                <use xlink:href="images/sprites/sprite-multi.svg#check"></use>
+              </svg>
+            </div>
+            <span class="offer-list__item--sm">Цена за метр от 1 600 ₽</span>
+          </div>
+        </div>
+
+        <div class="offer__form form-wrapper">
+          <div class="form__img">
+            <img src="images/dekor-1.png" aria-hidden="true" alt="">
+          </div>
+          <form class="form">
+            <div class="form__title">
+              Замер глубины скважины
+            </div>
+            <div class="form__btns">
+              <label class="form__field" aria-label="Телефон">
+                <svg width="12" height="20">
+                  <use xlink:href="images/sprites/sprite-multi.svg#phone"></use>
+                </svg>
+                <input type="tel" placeholder="Введите номер телефона">
+              </label>
+
+              <button class="btn-reset form__btn" type="submit">
+                Узнать стоимость скважины
+                <svg width="22" height="11">
+                  <use xlink:href="images/sprites/sprite-multi.svg#arrow"></use>
+                </svg>
+              </button>
+            </div>
+
+            <p class="form__text">Узнайте ориентировочную глубину бурения и примерную стоимость для Вашего участка.</p>
+            <p class="form__text">Выезд специалиста — бесплатный</p>
+          </form>
+        </div>
       </div>
     </section>
+
+    <section class="experience-section">
+      <div class="dekor experience__bg-blue"></div>
+      <div class="dekor experience__bg-grey"></div>
+      <div class="container experience__container">
+        <div class="experience__top">
+          <div class="experience">
+            <h2 class="experience__title">
+              Опыт работы
+              <p>более 10 лет</p>
+            </h2>
+
+            <div class="experience__descr">
+              <p>Пробурили</p>
+              <ul class="experience__descr-ul list-reset">
+                <li class="experience__descr-li">более 1 586 скважин</li>
+                <li class="experience__descr-li">более 56 200 метров</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience__bottom experience-bottom">
+            <div class="experience-bottom__column experience-bottom-column">
+              <div class="experience-bottom-column__text">
+                Основание компании
+              </div>
+              <div class="experience-bottom-column__subtext">2009</div>
+            </div>
+            <div class="experience-bottom__column experience-bottom-column">
+              <div class="experience-bottom-column__text">
+                Парк из 5 машин
+              </div>
+              <div class="experience-bottom-column__subtext">2012</div>
+            </div>
+            <div class="experience-bottom__column experience-bottom-column">
+              <div class="experience-bottom-column__text">
+                Выход на область
+              </div>
+              <div class="experience-bottom-column__subtext">2015</div>
+            </div>
+            <div class="experience-bottom__column experience-bottom-column">
+              <div class="experience-bottom-column__text">
+                Пробурено 1000 скважин
+              </div>
+              <div class="experience-bottom-column__subtext">2018</div>
+            </div>
+            <div class="experience-bottom__column experience-bottom-column">
+              <div class="experience-bottom-column__text">
+                Пробурено 1500 скважин
+              </div>
+              <div class="experience-bottom-column__subtext">2020</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="advantages">
+          <div class="advantages__container">
+            <ul class="advantages__list list-reset">
+              <li class="advantages__item">
+                <div class="advantages__icon">
+                  <svg width="36" height="42">
+                    <use xlink:href="images/sprites/sprite-multi.svg#adv-gidrolog"></use>
+                  </svg>
+                </div>
+                <div class="advantages__descr">
+                  <div class="advantages__title">
+                    Только в нашей компании в штате есть гидрогеолог
+                  </div>
+                  <div class="advantages__text">
+                    Благодаря этому мы будем знать ещё до начала бурения, какие грунты на Вашем участке и на какой глубине находится вода. Знание состава грунта позволяет нам максимально быстро и качественно проводить буровые работы, выбирать обсадные трубы и насос для скважины
+                  </div>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__icon">
+                  <svg width="35" height="33">
+                    <use xlink:href="images/sprites/sprite-multi.svg#adv-speed"></use>
+                  </svg>
+                </div>
+                <div class="advantages__descr">
+                  <div class="advantages__title advantages__title--speed">
+                    Бурим до 210 метров только компрессором
+                  </div>
+                  <div class="advantages__text">
+                    Обычно скважины такой глубины бурят с помощью насоса и воды. Для этого выкапывается яма на вашем участке под воду и при этом процесс бурения замедляется. Благодаря высокой квалификации нашего бурового мастера, вы экономите время и сохраняете вид участка — не приходится выкапывать яму и участок не заливает водой
+                  </div>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__icon">
+                  <svg width="37" height="44">
+                    <use xlink:href="images/sprites/sprite-multi.svg#adv-exp"></use>
+                  </svg>
+                </div>
+                <div class="advantages__descr">
+                  <div class="advantages__title">
+                    Большой опыт бурения самых сложных скважин в Иркутской области — на Ольхоне
+                  </div>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__icon">
+                  <svg width="38" height="29">
+                    <use xlink:href="images/sprites/sprite-multi.svg#adv-porodi"></use>
+                  </svg>
+                </div>
+                <div class="advantages__descr">
+                  <div class="advantages__title">
+                    Бурим любые породы
+                  </div>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__icon">
+                  <svg width="47" height="45">
+                    <use xlink:href="images/sprites/sprite-multi.svg#adv-six"></use>
+                  </svg>
+                </div>
+                <div class="advantages__descr">
+                  <div class="advantages__title">
+                    Машинисты буровых установок 6 разряда
+                  </div>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__icon">
+                  <svg width="33" height="32">
+                    <use xlink:href="images/sprites/sprite-multi.svg#adv-deep"></use>
+                  </svg>
+                </div>
+                <div class="advantages__descr">
+                  <div class="advantages__title">
+                    Бурим на глубину до 300 метров
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features-section">
+      <div class="dekor features__bg-whitegrey"></div>
+      <div class="container features__container">
+        <h2 class="features__title section-title">
+          После
+          <p>НАШЕЙ РАБОТЫ</p>
+        </h2>
+      </div>
+    </section>
+
+    <section class="technics-section">technics</section>
+    <section class="guarantee-section">guarantee</section>
+    <section class="result-section">result</section>
+    <section class="prices-section">prices</section>
+    <section class="map-section">map</section>
+    <section class="time-limits-section">time-limits</section>
+    <section class="order-section">order</section>
+    <section class="contacts-section">contacts</section>
+
   </main>
-  <footer class="footer">
+  <!-- <footer class="footer">
     Footer text
-  </footer>
+  </footer> -->
+
+  <!-- popup-menu -->
+  <div class="popup popup-menu">
+    <div class="popup__wrapper">
+        <div class="popup__inner">
+            <div class="popup__content">
+                <button class="btn-reset header__mobile-btn  header__mobile-btn--close popup-close popup__btn-close" type="button" aria-label="Закрыть окно">
+                  <svg width="15" height="5">
+                    <use xlink:href="images/sprites/sprite-multi.svg#close"></use>
+                  </svg>
+                </button>
+
+              <nav class="mobile-menu">
+                <ul class="mobile-menu__list list-reset">
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link popup-close" href="#" data-scroll-to="experience-section">Опыт</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link popup-close" href="#" data-scroll-to="technics-section">Техника</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link popup-close" href="#" data-scroll-to="features-section">Особенности</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link popup-close" href="#" data-scroll-to="guarantee-section">Гарантии</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link popup-close" href="#" data-scroll-to="result-section">Результат</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link popup-close" href="#" data-scroll-to="prices-section">Цены</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link popup-close" href="#" data-scroll-to="map-section">Карта глубин</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link popup-close" href="#" data-scroll-to="time-limits-section">Сроки</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link popup-close" href="#" data-scroll-to="order-section">Порядок работы</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link popup-close" href="#" data-scroll-to="contacts-section">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <a href="tel:+73952799343" class="phone popup-menu__phone">
+                <svg width="19" height="19">
+                  <use xlink:href="images/sprites/sprite-multi.svg#headphone"></use>
+                </svg>
+                +7 (3952) 799-343
+              </a>
+
+              <ul class="social list-reset popup-menu__social">
+                <span class="social__text">Напишите нам</span>
+                <li class="social__item social__item--viber"><a href="#" class="social__link">Viber</a></li>
+                <li class="social__item social__item--whatsapp"><a href="#" class="social__link">Whatsapp</a></li>
+                <li class="social__item social__item--telegram"><a href="#" class="social__link">Telegram</a></li>
+              </ul>
+
+              <div class="popup-menu__btns mobile-btns">
+                <button class="btn-reset mobile__btn mobile__btn--left popup-close" data-popup="popup-request">
+                  <svg width="22" height="26">
+                    <use xlink:href="images/sprites/sprite-multi.svg#deep"></use>
+                  </svg>
+                  <span>Узнать глубину на участке</span>
+                </button>
+                <button class="btn-reset mobile__btn mobile__btn--right popup-close" data-popup="popup-request">
+                  <svg width="26" height="26">
+                    <use xlink:href="images/sprites/sprite-multi.svg#cost"></use>
+                  </svg>
+                  <span>Рассчитать стоимость бурения</span>
+                </button>
+              </div>
+
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- /.popup-menu -->
+
+    <!-- popup-request -->
+    <div class="popup popup-request">
+      <div class="popup__wrapper">
+          <div class="popup__inner">
+              <div class="popup__content">
+                <button class="btn-reset header__mobile-btn  header__mobile-btn--close popup-close popup__btn-close" type="button" aria-label="Закрыть окно">
+                  <svg width="15" height="5">
+                    <use xlink:href="images/sprites/sprite-multi.svg#close"></use>
+                  </svg>
+                </button>
+
+                <div class="popup-request__title">Заказ консультации</div>
+                <form class="popup-request__form form">
+                  <div class="form__btns">
+                    <label class="form__field" aria-label="Имя">
+                      <svg width="16" height="16">
+                        <use xlink:href="images/sprites/sprite-multi.svg#user"></use>
+                      </svg>
+                      <input type="text" placeholder="Введите имя">
+                    </label>
+
+                    <label class="form__field" aria-label="Телефон">
+                      <svg width="12" height="20">
+                        <use xlink:href="images/sprites/sprite-multi.svg#phone"></use>
+                      </svg>
+                      <input type="tel" placeholder="Введите номер телефона">
+                    </label>
+
+                    <button class="btn-reset form__btn popup-close" type="submit" data-popup="popup-accept">
+                      Заказать консультацию
+                      <svg width="22" height="11">
+                        <use xlink:href="images/sprites/sprite-multi.svg#arrow"></use>
+                      </svg>
+                    </button>
+                  </div>
+
+                  <p class="form__text">Наши специалисты ответят на любые ваши вопросы</p>
+                  <p class="form__text">Консультация и выезд специалиста абсолютно бесплатны</p>
+                </form>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- /.popup-request -->
+
+    <!-- popup-accept -->
+    <div class="popup popup-accept">
+      <div class="popup__wrapper">
+          <div class="popup__inner">
+              <div class="popup__content">
+                <button class="btn-reset header__mobile-btn  header__mobile-btn--close popup-close popup__btn-close" type="button" aria-label="Закрыть окно">
+                  <svg width="15" height="5">
+                    <use xlink:href="images/sprites/sprite-multi.svg#close"></use>
+                  </svg>
+                </button>
+
+                <div class="popup-accept__title">Заказ консультации</div>
+                <div class="popup-accept__img">
+                  <svg width="20" height="14">
+                    <use xlink:href="images/sprites/sprite-multi.svg#accept"></use>
+                  </svg>
+                </div>
+                <div class="popup-accept__name">
+                  Уважаемый Константин
+                </div>
+                <p class="popup-accept__text">
+                  Мы приняли вашу заявку
+                </p>
+                <p class="popup-accept__text">
+                  Наш специалист свяжется с вами в ближайшее время по номеру +7 (950) 105-55-22
+                </p>
+
+                <button class="btn-reset btn btn--accent popup-accept__btn popup-close" type="button">
+                  Закрыть окно
+                </button>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- /.popup-accept -->
 
   <script src="js/main.min.js"></script>
 </body>

@@ -1,0 +1,68 @@
+.advantages {
+  color: $color-white;
+
+  &__container {
+    padding-top: 67px;
+
+    @include media-max($breakpoint_xs) {
+      padding-top: 125px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 30px;
+
+    @include media-max($breakpoint_xs) {
+      gap: 35px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    width: 48%;
+
+    @include media-max($breakpoint_xs) {
+      width: 100%;
+    }
+  }
+  &__icon {
+    margin-right: 21px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 63px;
+    height: 82px;
+    background-image: url('../images/masks/adv-icon.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    svg {
+      fill: $color-white;
+    }
+  }
+
+  &__descr {
+    padding-top: 19px;
+    flex-grow: 1;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    // max-width: 100%;
+    &--speed {
+      max-width: 400px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.2;
+    max-width: 450px;
+  }
+}

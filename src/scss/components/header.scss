@@ -1,0 +1,144 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 112px;
+  padding: 0 80px;
+
+  @include media-max($breakpoint_sm) {
+    padding: 0 0 0 15px;
+    height: 72px;
+  }
+
+  &__logo {
+    padding-top: 16px;
+  }
+
+  &__phone,
+  &__social {
+    @include media-max($breakpoint_sm) {
+      display: none !important;
+    }
+  }
+
+  &__btns {
+    display: flex;
+
+    @include media-max($breakpoint_sm) {
+      display: none;
+    }
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    text-align: left;
+    width: 268px;
+    height: 112px;
+    color: $color-white;
+    font-weight: 500;
+    font-size: 16px;
+
+    svg {
+      width: 26px;
+      height: 26px;
+      margin-right: 18px;
+      stroke: $color-white;
+      path {
+        stroke: $color-white;
+      }
+    }
+
+    &--left {
+      background-image: url('../images/masks/main-btn-left.svg');
+      // background-color: $color-grey;
+      // clip-path: polygon(0 0, 100% 0, 100% 100%, 12% 100%);
+      padding-right: 23px;
+      justify-content: flex-end;
+
+      span {
+        max-width: 143px;
+        line-height: 15px;
+      }
+    }
+
+    &--right {
+      background-image: url('../images/masks/main-btn-right.svg');
+      // background-color: $color-accent;
+      // clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);
+      padding-left: 18px;
+
+      span {
+        max-width: 168px;
+        line-height: 15px;
+      }
+    }
+  }
+
+  &__mobile-btns {
+    display: none;
+    // z-index: -1;
+    background-image: url('../images/masks/mobile-btn-left.svg');
+
+    @include media-max($breakpoint_sm) {
+      display: flex;
+    }
+  }
+
+  &__mobile-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 72px;
+    color: $color-white;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 100;
+
+    svg {
+      stroke: $color-white;
+      path {
+        stroke: $color-white;
+      }
+    }
+
+
+    &--left {
+      width: 79px;
+      background-image: url('../images/masks/mobile-btn-left.svg');
+
+      svg {
+        width: 26px;
+        height: 26px;
+        transform: translateX(45%);
+      }
+    }
+
+    &--right {
+      width: 86px;
+      background-image: url('../images/masks/mobile-btn-right.svg');
+
+      svg {
+        width: 19px;
+        height: 9px;
+        transform: translateX(45%);
+      }
+    }
+
+    &--close {
+      width: 86px;
+      background-image: url('../images/masks/mobile-btn-right.svg');
+      svg {
+        width: 15px;
+        height: 15px;
+        transform: translateX(45%);
+        pointer-events: none;
+      }
+    }
+  }
+}

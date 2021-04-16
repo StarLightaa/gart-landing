@@ -1,0 +1,49 @@
+.popup-accept {
+  color: $color-white;
+  text-align: center;
+
+  &__img {
+    margin: 0 auto;
+    margin-bottom: 48px;
+    width: 180px;
+    height: 180px;
+    background-image: url('../images/masks/popup-accept.svg');
+    background-repeat: no-repeat;
+    background-position: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      display: block;
+      width: 20px;
+      height: 14px;
+    }
+  }
+
+  &__title {
+    padding-top: 26px;
+    margin-bottom: 115px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: initial;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 34px;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.2;
+
+    &:last-of-type {
+      margin-bottom: 125px;
+    }
+  }
+}

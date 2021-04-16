@@ -25,10 +25,11 @@ body {
   font-family: $font-family-primary;
   font-size: 16px;
   font-weight: 400;
+  color: $color-grey;
 }
 
 .container {
-  max-width: 1430px;
+  max-width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -66,4 +67,8 @@ img {
 	height: 1px !important;
 	width: 1px !important;
 	overflow: hidden;
+}
+
+.no-scroll {
+  overflow: hidden;
 }

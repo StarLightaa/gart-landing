@@ -1,0 +1,94 @@
+.popup-menu {
+  &__phone  {
+    color: $color-white;
+    margin-bottom: 25px;
+
+    svg {
+      stroke: $color-white;
+      path {
+        stroke: $color-white;
+      }
+    }
+  }
+
+  &__social {
+    color: $color-white;
+    margin-bottom: 45px;
+
+    .social__text {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.mobile-menu {
+  padding-top: 82px;
+  margin-bottom: 97px;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+  }
+
+  &__link {
+    font-size: 20px;
+    color: $color-white;
+  }
+}
+
+
+.mobile-btns {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+}
+
+.mobile__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  width: 50%;
+  height: 75px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+
+  svg, span {
+    pointer-events: none;
+  }
+
+  span {
+    max-width: 130px;
+    margin-left: 16px;
+  }
+
+  &--left {
+    background-color: $color-white;
+    color: $color-grey;
+
+    svg {
+      stroke: $color-grey;
+      path {
+        stroke: $color-grey;
+      }
+    }
+  }
+
+  &--right {
+    background-color: $color-accent;
+    color: $color-white;
+
+    svg {
+      stroke: $color-white;
+      path {
+        stroke: $color-white;
+      }
+    }
+  }
+}
+

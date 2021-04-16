@@ -1,0 +1,52 @@
+.dekor {
+  z-index: -1;
+  position: absolute;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+.offer-section__bg-whitegrey {
+  top: 303px;
+  left: 0;
+  background-image: url(../images/masks/main-bg-whitegrey.svg);
+
+  @include media-max($breakpoint_xs) {
+    top: 260px;
+    background-image: url(../images/masks/mobile/sm-main-bg-whitegrey.svg);
+  }
+}
+
+.experience__bg-blue {
+  top: -428px;
+  left: 0;
+  background-image: url(../images/masks/main-bg-blue.svg);
+
+  @include media-max($breakpoint_xs) {
+    background-image: url(../images/masks/mobile/sm-main-bg-blue.svg);
+    top: 638px;
+  }
+}
+
+.experience__bg-grey {
+  top: 290px;
+  left: 0;
+  background-image: url(../images/masks/main-bg-grey.svg);
+
+  @include media-max($breakpoint_xs) {
+    background-image: url(../images/masks/mobile/sm-main-bg-grey.svg);
+  }
+}
+
+.features__bg-whitegrey {
+  top: -390px;
+  left: 0;
+  background-image: url(../images/masks/features-bg-whitegrey.svg);
+
+  @include media-max($breakpoint_xs) {
+    background-image: url(../images/masks/mobile/sm-features-bg-whitegrey.svg);
+  }
+}
