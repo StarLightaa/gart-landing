@@ -4,7 +4,7 @@
   &__container {
     margin-top: 190px;
 
-    @include media-max($breakpoint_xs) {
+    @include media-max($breakpoint_md) {
       margin-top: 107px;
     }
   }
@@ -19,7 +19,11 @@
     letter-spacing: -0.01em;
     text-transform: uppercase;
 
-    @include media-max($breakpoint_xs) {
+    @include media-max($breakpoint_xl) {
+      font-size: 50px;
+    }
+
+    @include media-max($breakpoint_md) {
       font-size: 35px;
       margin-bottom: 46px;
     }
@@ -41,8 +45,77 @@
   &__description {
     margin-bottom: 220px;
 
-    @include media-max($breakpoint_xs) {
+    @include media-max($breakpoint_lg) {
+      margin-bottom: 100px;
+    }
+
+    @include media-max($breakpoint_sm) {
       margin-bottom: 0;
+    }
+  }
+
+  &__form {
+    display: flex;
+    background-image: url('../images/masks/mask-main-1.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin-bottom: 148px;
+
+    @include media-max($breakpoint_xl) {
+      background: $color-grey;
+      border-radius: 8px;
+      padding-right: 50px;
+      justify-content: space-between;
+    }
+
+    @include media-max($breakpoint_sm) {
+      margin: 0 auto;
+      padding: 0 21px;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+      background: url(../images/masks/mobile/sm-mask-main-1.svg);
+      background-repeat: no-repeat;
+      background-position: 0 37px;
+      max-width: 386px;
+    }
+  }
+}
+
+.offer-form {
+  @include media-max($breakpoint_lg) {
+    flex: 0 0 70%;
+    transform: translateX(-100%);
+  }
+
+  @include media-max($breakpoint_sm) {
+    flex: 0 0 100%;
+    transform: translateX(0);
+    text-align: center;
+  }
+
+  &__img {
+    width: 372px;
+    height: 1px;
+    transform: translate(-20px, -90px);
+
+    @include media-max($breakpoint_lg) {
+      flex: 0 0 100%;
+      transform: translate(-70%, -90px);
+      text-align: right;
+    }
+
+    @include media-max($breakpoint_sm) {
+      height: 324px;
+      text-align: center;
+      flex: none;
+      transform: translate(0px, 0px);
+    }
+
+    @include media-max($breakpoint_xs) {
+      // display: none;
+      height: 324px;
+      transform: translate(0px, 0px);
     }
   }
 }
@@ -52,20 +125,15 @@
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
-  gap: 58px;
-
-  @include media-max($breakpoint_xs) {
-    gap: 18px;
-  }
+  gap: 18px 58px;
 
   &__item {
     display: flex;
     align-items: center;
     position: relative;
-    // width: 50%;
     font-size: 28px;
 
-    @include media-max($breakpoint_xs) {
+    @include media-max($breakpoint_md) {
       font-size: 22px;
     }
 
@@ -82,8 +150,6 @@
       background-image: url('../images/masks/main-list-mask.svg');
       background-repeat: no-repeat;
       background-position: 0 0;
-      // background-color: $color-accent;
-      // clip-path: polygon(0 0, 80% 0, 100% 50%, 80% 100%, 0 100%);
 
       svg {
         stroke: $color-white;
@@ -99,8 +165,4 @@
       }
     }
   }
-}
-
-.offer-form {
-
 }

@@ -2,38 +2,6 @@
   color: $color-white;
   padding: 36px 0 43px;
 
-  @include media-max($breakpoint_xs) {
-    text-align: center;
-  }
-
-
-  &-wrapper {
-    display: flex;
-    background-image: url('../images/masks/mask-main-1.svg');
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    margin-bottom: 148px;
-
-    @include media-max($breakpoint_xs) {
-      flex-direction: column;
-      background-image: url(../images/masks/mobile/sm-mask-main-1.svg);
-      background-position: 0 37px;
-      margin-bottom: 40px;
-    }
-  }
-
-  &__img {
-    width: 372px;
-    height: 1px;
-    transform: translate(-20px, -90px);
-
-    @include media-max($breakpoint_xs) {
-      // display: none;
-      height: 324px;
-      transform: translate(0px, 0px);
-    }
-  }
-
   &__title {
     font-weight: 500;
     font-size: 22px;
@@ -55,11 +23,22 @@
     gap: 35px;
     margin-bottom: 42px;
 
-    @include media-max($breakpoint_xs) {
+    @include media-max($breakpoint_md) {
       flex-direction: column;
+      align-items: flex-start;
       gap: 17px;
       margin-bottom: 28px;
     }
+
+    @include media-max($breakpoint_sm) {
+      align-items: center;
+    }
+
+    // @include media-max($breakpoint_xs) {
+    //   flex-direction: column;
+    //   gap: 17px;
+    //   margin-bottom: 28px;
+    // }
   }
 
   &__field {

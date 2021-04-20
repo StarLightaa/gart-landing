@@ -1,21 +1,13 @@
 .social {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   flex-wrap: wrap;
-
-  &__text {
-    min-width: 132px;
-  }
 
   &__item {
     position: relative;
     font-weight: 700;
     font-size: 16px;
     padding-left: 15px;
-
-    &:not(:last-child) {
-      margin-right: 18px;
-    }
 
     &::before {
       content: '';

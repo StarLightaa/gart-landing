@@ -2,8 +2,16 @@
   background: rgba($color: $color-grey, $alpha: .8) url('../images/map.png');
   color: $color-white;
 
+  @include media-max($breakpoint_sm) {
+    background: none;
+  }
+
   &__container {
     position: relative;
+
+    @include media-max($breakpoint_sm) {
+      padding: 0;
+    }
   }
 
   &__body {
@@ -13,9 +21,12 @@
     background-position: 0 0;
     max-width: 524px;
     width: 100%;
-
     display: flex;
     flex-direction: column;
+
+    @include media-max($breakpoint_sm) {
+      margin: 0 auto;
+    }
   }
 
   &__logo {

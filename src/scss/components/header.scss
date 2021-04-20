@@ -10,7 +10,15 @@
   height: 112px;
   padding: 0 80px;
 
-  @include media-max($breakpoint_sm) {
+  @include media-max(1500px) {
+    padding: 0 30px;
+  }
+
+  @include media-max($breakpoint_lg) {
+    padding: 0 15px;
+  }
+
+  @include media-max($breakpoint_md) {
     padding: 0 0 0 15px;
     height: 72px;
   }
@@ -19,17 +27,31 @@
     padding-top: 16px;
   }
 
-  &__phone,
-  &__social {
-    @include media-max($breakpoint_sm) {
+  &__phone {
+    @include media-max($breakpoint_md) {
       display: none !important;
+    }
+  }
+
+  &__social {
+    &-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      @include media-max($breakpoint_lg) {
+        flex-direction: column;
+      }
+      @include media-max($breakpoint_md) {
+        display: none !important;
+      }
     }
   }
 
   &__btns {
     display: flex;
 
-    @include media-max($breakpoint_sm) {
+    @include media-max($breakpoint_md) {
       display: none;
     }
   }
@@ -44,10 +66,19 @@
     font-weight: 500;
     font-size: 16px;
 
+    @include media-max($breakpoint_xl) {
+      width: 178px;
+      padding: 0 15px !important;
+      display: flex;
+      justify-content: center !important;
+      align-items: center;
+    }
+
     svg {
       width: 26px;
       height: 26px;
       margin-right: 18px;
+      flex-shrink: 0;
       stroke: $color-white;
       path {
         stroke: $color-white;
@@ -56,10 +87,13 @@
 
     &--left {
       background-image: url('../images/masks/main-btn-left.svg');
-      // background-color: $color-grey;
-      // clip-path: polygon(0 0, 100% 0, 100% 100%, 12% 100%);
       padding-right: 23px;
       justify-content: flex-end;
+
+      @include media-max($breakpoint_xl) {
+        background: $color-grey;
+        border-bottom-left-radius: 8px;
+      }
 
       span {
         max-width: 143px;
@@ -69,9 +103,16 @@
 
     &--right {
       background-image: url('../images/masks/main-btn-right.svg');
-      // background-color: $color-accent;
-      // clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);
       padding-left: 18px;
+
+      @include media-max($breakpoint_xl) {
+        background: $color-accent;
+        border-bottom-right-radius: 8px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
       span {
         max-width: 168px;
@@ -85,7 +126,7 @@
     // z-index: -1;
     background-image: url('../images/masks/mobile-btn-left.svg');
 
-    @include media-max($breakpoint_sm) {
+    @include media-max($breakpoint_md) {
       display: flex;
     }
   }

@@ -123,6 +123,10 @@ img {
   position: absolute;
   bottom: 0;
   right: 20px;
+
+  @include media-max($breakpoint_sm) {
+    display: none;
+  }
 }
 
 .online-cons {
