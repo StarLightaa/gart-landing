@@ -1,0 +1,47 @@
+.map-section {
+  height: 1079px;
+  background: rgba($color: $color-grey, $alpha: .8) url('../images/map.png');
+  color: $color-white;
+}
+
+.map {
+  &__container {
+    height: 100%;
+    padding-top: 66px;
+    padding-bottom: 37px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+
+  &__descr {
+    margin: 0;
+    font-size: 22px;
+    line-height: 1.1;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.map-form {
+  padding: 17px 46px 24px;
+  background-color: $color-grey;
+  border-radius: 5px;
+  box-shadow: 0 24px 40px rgba($color: $color-grey, $alpha: .2);
+
+  &__text {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .form__btns {
+    margin-bottom: 0;
+  }
+}

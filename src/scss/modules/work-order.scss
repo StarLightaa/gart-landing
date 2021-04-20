@@ -1,0 +1,153 @@
+.work-order {
+  &__container {
+    position: relative;
+    margin-bottom: 115px;
+  }
+
+  &__banner {
+    position: absolute;
+    top: -370px;
+    right: 0;
+  }
+
+  &__title {
+    margin-bottom: 133px;
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 43px;
+    &-row {
+      width: 100%;
+      display: flex;
+      gap: 20px;
+      &:nth-of-type(even) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  &__stage {
+    &:not(:last-child) {
+      margin-bottom: 114px;
+    }
+
+  }
+}
+
+.work-order-stage {
+  &__title {
+    margin: 0;
+    display: inline-flex;
+    &--xl {
+      padding-right: 17px;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 1.1;
+      margin-bottom: 29px;
+    }
+
+    &--md {
+      padding-top: 7px;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 1.1;
+    }
+
+    &--accent {
+      color: $color-accent;
+    }
+  }
+}
+
+.work-order-card {
+  // padding: 39px 30px 39px 39px;
+  position: relative;
+  padding-right: 30px;
+  background-color: $color-white;
+  border-radius: 20px;
+
+  height: 240px;
+  width: calc(100% /3);
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    width: 89px;
+    flex-shrink: 0;
+    text-align: center;
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__body {
+    flex-grow: 1;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+
+    a {
+      color: $color-accent;
+    }
+
+    button {
+      width: 218px;
+    }
+  }
+
+  &--arrow-left {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 28px;
+      height: 292px;
+      top: 50%;
+      right: calc(100% + 7px);
+      background-image: url('../images/work-arrow.svg');
+      transform: scale(-1, 1)
+    }
+  }
+
+  &--arrow-right {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 28px;
+      height: 292px;
+      top: 50%;
+      left: calc(100% + 7px);
+      background-image: url('../images/work-arrow.svg');
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &--accent {
+      &::before {
+        background-image: url('../images/work-arrow-blue.svg');
+      }
+    }
+  }
+
+  &--grey {
+    background-color: $color-grey;
+    color: $color-white;
+  }
+
+  &--accent {
+    background-color: $color-accent;
+    color: $color-white;
+  }
+
+  &--end {
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 89px;
+    color: rgba($color: $color-white, $alpha: .3);
+  }
+}

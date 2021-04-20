@@ -10,43 +10,122 @@
 }
 
 .offer-section__bg-whitegrey {
-  top: 303px;
+  height: 610px;
+  top: 493px;
   left: 0;
   background-image: url(../images/masks/main-bg-whitegrey.svg);
 
-  @include media-max($breakpoint_xs) {
-    top: 260px;
-    background-image: url(../images/masks/mobile/sm-main-bg-whitegrey.svg);
-  }
+  // @include media-max($breakpoint_xs) {
+  //   top: 260px;
+  //   background-image: url(../images/masks/mobile/sm-main-bg-whitegrey.svg);
+  // }
 }
 
 .experience__bg-blue {
-  top: -428px;
+  height: 1574px;
+  top: 669px;
   left: 0;
   background-image: url(../images/masks/main-bg-blue.svg);
 
-  @include media-max($breakpoint_xs) {
-    background-image: url(../images/masks/mobile/sm-main-bg-blue.svg);
-    top: 638px;
-  }
+  // @include media-max($breakpoint_xs) {
+  //   background-image: url(../images/masks/mobile/sm-main-bg-blue.svg);
+  //   top: 638px;
+  // }
 }
 
 .experience__bg-grey {
-  top: 290px;
+  height: 882px;
+  top: 1385px;
   left: 0;
   background-image: url(../images/masks/main-bg-grey.svg);
 
-  @include media-max($breakpoint_xs) {
-    background-image: url(../images/masks/mobile/sm-main-bg-grey.svg);
-  }
+  // @include media-max($breakpoint_xs) {
+  //   background-image: url(../images/masks/mobile/sm-main-bg-grey.svg);
+  // }
 }
 
 .features__bg-whitegrey {
-  top: -390px;
+  height: 1730px;
+  top: 1834px;
+  // top: 501px;
   left: 0;
   background-image: url(../images/masks/features-bg-whitegrey.svg);
 
-  @include media-max($breakpoint_xs) {
-    background-image: url(../images/masks/mobile/sm-features-bg-whitegrey.svg);
-  }
+  // @include media-max($breakpoint_xs) {
+  //   background-image: url(../images/masks/mobile/sm-features-bg-whitegrey.svg);
+  // }
+}
+
+.technics-bg-grey {
+  height: 1729px;
+  top: 3125px;
+  // top: -393px;
+  left: 0;
+
+  background-image: url(../images/masks/technics-bg-grey.svg);
+
+  // @include media-max($breakpoint_xs) {
+  //   background-image: url(../images/masks/mobile/sm-technics-bg-grey.svg);
+  // }
+}
+
+.guarantee-bg-grey {
+  height: 1923px;
+  top: 4416px;
+  // top: 10px;
+  left: 0;
+
+  background-image: url(../images/masks/guarantee-bg-grey.svg);
+
+  // @include media-max($breakpoint_xs) {
+  //   background-image: url(../images/masks/mobile/sm-guarantee-bg-grey.svg);
+  // }
+}
+
+.guarantee-bg-blue {
+  height: 1427px;
+  top: 5859px;
+  left: 0;
+
+  background-image: url(../images/masks/guarantee-bg-blue.svg);
+
+  // @include media-max($breakpoint_xs) {
+  //   background-image: url(../images/masks/mobile/sm-guarantee-bg-grey.svg);
+  // }
+}
+
+.prices-bg-whitegrey {
+  height: 2621px;
+  top: 8379px;
+  left: 0;
+
+  background-image: url(../images/masks/prices-bg-whitegrey.svg);
+
+  // @include media-max($breakpoint_xs) {
+  //   background-image: url(../images/masks/mobile/sm-guarantee-bg-grey.svg);
+  // }
+}
+
+.time-limits-bg-blue {
+  height: 1051px;
+  top: 11897px;
+  left: 0;
+
+  background-image: url(../images/masks/time-limits-bg-blue.svg);
+
+  // @include media-max($breakpoint_xs) {
+  //   background-image: url(../images/masks/mobile/sm-guarantee-bg-grey.svg);
+  // }
+}
+
+.order-bg-whitegrey {
+  height: 2434px;
+  top: 12519px;
+  left: 0;
+
+  background-image: url(../images/masks/order-bg-whitegrey.svg);
+
+  // @include media-max($breakpoint_xs) {
+  //   background-image: url(../images/masks/mobile/sm-guarantee-bg-grey.svg);
+  // }
 }

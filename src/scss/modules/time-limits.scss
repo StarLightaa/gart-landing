@@ -1,0 +1,113 @@
+.time-limits-section {
+  color: $color-white;
+}
+
+.time-limits {
+  &__container {
+    padding-top: 55px;
+    margin-bottom: 302px;
+  }
+
+  &__title {
+
+  }
+
+  &__list {
+    display: flex;
+    padding-top: 126px;
+  }
+
+  &__item {
+    position: relative;
+    width: 200px;
+    // &-icon {
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: center;
+    //   width: 120px;
+    //   height: 89px;
+    //   background-image: url('../images/masks/time-limits-white.svg');
+    //   background-repeat: no-repeat;
+    //   background-position: 0 0;
+    // }
+
+    &::before {
+      content: '';
+      width: 120px;
+      height: 89px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-75%);
+      background-image: url('../images/masks/time-limits-ghost.svg');
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &__icon {
+      margin-bottom: 11px;
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.2;
+      margin-bottom: 28px;
+    }
+
+    &__text {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.2;
+    }
+
+    &:nth-of-type(even) {
+      transform: translateY(-7px);
+      &::before {
+        transform: translate(-75%, 7px);
+      }
+      .time-limits__item__title {
+        transform: translateY(-171px);
+      }
+    }
+
+    &--last {
+      z-index: 2;
+      position: relative;
+      margin-left: auto;
+      padding-left: 35px;
+      padding-right: 20px;
+      width: 205px;
+      height: 82px;
+      background-image: url('../images/masks/time-limits-grey.svg');
+      background-repeat: no-repeat;
+      background-position: 0 0;
+
+      font-weight: 500;
+      font-size: 14px;
+
+
+      display: flex;
+      align-items: center;
+
+      svg{
+        width: 25px;
+        height: 40px;
+        margin-right: 18px;
+      }
+
+      &::before {
+        content: '';
+        width: 120px;
+        height: 89px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-75%);
+        background-image: url('../images/masks/time-limits-ghost.svg');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+      }
+    }
+  }
+}

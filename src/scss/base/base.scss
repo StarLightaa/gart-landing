@@ -1,6 +1,7 @@
 @import 'normalize.css/normalize';
 
 @include focus-visible;
+@import 'aos/dist/aos';
 
 *,
 *::before,
@@ -71,4 +72,61 @@ img {
 
 .no-scroll {
   overflow: hidden;
+}
+
+[data-aos="rotate360"] {
+  // transform: translateX(100px);
+  transform: rotate(0);
+
+  &.aos-animate {
+    transform: rotate(360deg);
+  }
+
+  transition-property: transform, opacity;
+  // opacity: 0;
+  // transition-property: transform, opacity;
+
+  // &.aos-animate {
+  //   opacity: 1;
+  // }
+
+  // @media screen and (min-width: 768px) {
+  //   transform: translateX(100px);
+
+  //   &.aos-animate {
+  //     transform: translateX(0);
+  //   }
+  // }
+}
+
+// [data-aos="from-right-to-center"] {
+//   transform: translateX(100%);
+
+//   &.aos-animate {
+//     transform: translateX(0);
+//   }
+
+//   transition-property: transform, opacity;
+// }
+
+// [data-aos="from-center-to-left"] {
+//   transform: translateX(0);
+
+//   &.aos-animate {
+//     transform: translateX(-130%);
+//   }
+
+//   transition-property: transform, opacity;
+// }
+
+.to-top {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+.online-cons {
+  position: absolute;
+  top: 0;
+  right: 0;
 }

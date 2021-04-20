@@ -1,0 +1,66 @@
+.footer {
+  background: rgba($color: $color-grey, $alpha: .8) url('../images/map.png');
+  color: $color-white;
+
+  &__container {
+    position: relative;
+  }
+
+  &__body {
+    padding: 50px 42px 22px;
+    background-image: url('../images/masks/footer-bg.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    max-width: 524px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo {
+    margin-bottom: 60px;
+  }
+
+  &__phone {
+    font-size: 24px !important;
+  }
+
+  &__social {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 7px;
+  }
+
+  &__mail {
+    font-weight: 500;
+    font-size: 18px;
+  }
+}
+
+.footer-row {
+  &:not(:last-child) {
+    margin-bottom: 41px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 18px;
+  }
+}
+
+.footer-copy {
+  padding-top: 72px;
+
+  &__logo {
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+  }
+}
