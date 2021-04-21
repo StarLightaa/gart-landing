@@ -311,10 +311,10 @@
               </ul>
             </div>
             <div class="feature-card__images">
-              <div class="feature-card__dekor">
+              <!-- <div class="feature-card__dekor">
                 <img class="feature-card__dekor--dynamite" src="images/features-card-dynamite.png" alt="">
                 <img class="feature-card__dekor--dirt" src="images/features-card-dirt.png" alt="">
-              </div>
+              </div> -->
               <img src="images/feature-card-1.png" alt="">
               <img src="images/feature-card-1.png" alt="">
             </div>
@@ -347,12 +347,12 @@
               </ul>
             </div>
             <div class="feature-card__images">
-              <div class="feature-card__dekor">
+              <!-- <div class="feature-card__dekor">
                 <img data-aos="rotate360" data-aos-delay="100" data-aos-duration="3000" data-aos-anchor=".dekor--anchor-1" class="feature-card__dekor--leaf-1" src="images/features-card-leaft-1.png" alt="">
                 <img data-aos="rotate360" data-aos-delay="200" data-aos-duration="3000" data-aos-anchor=".dekor--anchor-2" class="feature-card__dekor--leaf-2" src="images/features-card-leaft-2.png" alt="">
                 <img class="feature-card__dekor--leaf-3" src="images/features-card-leaft-3.png" alt="">
                 <img class="feature-card__dekor--leaf-4" src="images/features-card-leaft-4.png" alt="">
-              </div>
+              </div> -->
               <img class="dekor--anchor-1" src="images/feature-card-2.png" alt="">
               <img class="dekor--anchor-2" src="images/feature-card-2.png" alt="">
             </div>
@@ -374,18 +374,23 @@
         <div class="technics__item technics-item">
           <h3 class="technics-item__title">КАМАЗ УРБ 2А2</h3>
           <div class="technics-item__img">
-            <img class="technics-item__img--ghost"
+            <!-- <img class="technics-item__img--ghost"
               data-aos="from-center-to-left"
               data-aos-delay="1500"
               data-aos-duration="3000"
               data-aos-anchor=".technics-item__img"
-              src="images/technics-car-ghost.svg" alt="">
-            <img class="technics-item__img--kamaz"
+              src="images/technics-car-ghost.svg" alt=""> -->
+
+            <picture class="technics-item__img--kamaz">
+              <source srcset="images/technics-car-sm.png" media="(max-width: 768px)">
+              <img srcset="images/technics-car.png" alt="Камаз">
+            </picture>
+            <!-- <img class="technics-item__img--kamaz"
               data-aos="from-right-to-center"
               data-aos-delay="1000"
               data-aos-duration="3000"
               data-aos-anchor=".technics-item__img"
-              src="images/technics-car.png" alt="">
+              src="images/technics-car.png" alt=""> -->
           </div>
         </div>
       </div>
@@ -750,7 +755,7 @@
           <div class="prices-banner__right">
             <button class="btn-reset btn btn--accent prices-banner__btn" >
               Зафиксировать цену
-              <svg width="22" height="11">
+              <svg width="25" height="15">
                 <use xlink:href="images/sprites/sprite-multi.svg#arrow"></use>
               </svg>
             </button>
@@ -1289,7 +1294,7 @@
               Поиск
             </div>
             <form class="map-form__form">
-              <label class="form__field" aria-label="Имя">
+              <label class="form__field map-form--search" aria-label="Имя">
                 <svg width="15" height="15">
                   <use xlink:href="images/sprites/sprite-multi.svg#search"></use>
                 </svg>
@@ -1299,7 +1304,7 @@
             </form>
           </div>
 
-          <div class="map-form">
+          <div class="map-form map-form--centered">
             <div class="map-form__text">
               Не нашли свой адрес на карте? Закажите бесплатную консультацию
             </div>
@@ -1336,9 +1341,11 @@
 
         <ul class="time-limits__list list-reset">
           <li class="time-limits__item">
-            <svg class="time-limits__item__icon" width="120" height="89">
-              <use xlink:href="images/sprites/sprite-multi.svg#time-limits-1"></use>
-            </svg>
+            <div class="time-limits__item__icon">
+              <svg  width="120" height="89">
+                <use xlink:href="images/sprites/sprite-multi.svg#time-limits-1"></use>
+              </svg>
+            </div>
             <div class="time-limits__item__title">
               Только в нашей <br> компании в штате гидрогеолог
             </div>
@@ -1348,18 +1355,23 @@
           </li>
 
           <li class="time-limits__item">
-            <svg class="time-limits__item__icon" width="120" height="89">
-              <use xlink:href="images/sprites/sprite-multi.svg#time-limits-2"></use>
-            </svg>
+            <div class="time-limits__item__icon">
+              <svg width="120" height="89">
+                <use xlink:href="images/sprites/sprite-multi.svg#time-limits-2"></use>
+              </svg>
+            </div>
             <div class="time-limits__item__title">
               Высокопроизво- дительные установки УРБ 2А2 на базе Камаза
             </div>
           </li>
 
           <li class="time-limits__item">
-            <svg class="time-limits__item__icon" width="120" height="89">
-              <use xlink:href="images/sprites/sprite-multi.svg#time-limits-3"></use>
-            </svg>
+            <div class="time-limits__item__icon">
+              <svg width="120" height="89">
+                <use xlink:href="images/sprites/sprite-multi.svg#time-limits-3"></use>
+              </svg>
+            </div>
+
             <div class="time-limits__item__title">
               Бурим до 210 метров только компрессором
             </div>
@@ -1368,17 +1380,23 @@
             </div>
           </li>
           <li class="time-limits__item">
-            <svg class="time-limits__item__icon" width="120" height="89">
-              <use xlink:href="images/sprites/sprite-multi.svg#time-limits-4"></use>
-            </svg>
+            <div class="time-limits__item__icon">
+              <svg width="120" height="89">
+                <use xlink:href="images/sprites/sprite-multi.svg#time-limits-4"></use>
+              </svg>
+            </div>
+
             <div class="time-limits__item__title">
               Умеем бурить даже сложные породы грунта в короткие сроки
             </div>
           </li>
           <li class="time-limits__item">
-            <svg class="time-limits__item__icon" width="120" height="89">
-              <use xlink:href="images/sprites/sprite-multi.svg#time-limits-5"></use>
-            </svg>
+            <div class="time-limits__item__icon">
+              <svg width="120" height="89">
+                <use xlink:href="images/sprites/sprite-multi.svg#time-limits-5"></use>
+              </svg>
+            </div>
+
             <div class="time-limits__item__title">
               Все мастера на объектах живут в собственной технике.
             </div>

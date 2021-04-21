@@ -74,15 +74,15 @@ img {
   overflow: hidden;
 }
 
-[data-aos="rotate360"] {
+// [data-aos="rotate360"] {
   // transform: translateX(100px);
-  transform: rotate(0);
+  // transform: rotate(0);
 
-  &.aos-animate {
-    transform: rotate(360deg);
-  }
+  // &.aos-animate {
+  //   transform: rotate(360deg);
+  // }
 
-  transition-property: transform, opacity;
+  // transition-property: transform, opacity;
   // opacity: 0;
   // transition-property: transform, opacity;
 
@@ -97,7 +97,7 @@ img {
   //     transform: translateX(0);
   //   }
   // }
-}
+// }
 
 // [data-aos="from-right-to-center"] {
 //   transform: translateX(100%);

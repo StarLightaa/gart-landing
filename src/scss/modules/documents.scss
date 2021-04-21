@@ -5,7 +5,7 @@
     content: '';
     position: absolute;
     left: 0;
-    bottom: 0px;
+    bottom: 1px;
     width: 100%;
     height: 100%;
     background-color: $color-accent;
@@ -22,6 +22,11 @@
     background-color: $color-white;
     z-index: -1;
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+
+    @include media-max($breakpoint_sm) {
+      height: 95px;
+      clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    }
   }
 }
 
@@ -38,6 +43,11 @@
   }
   @include media-max($breakpoint_md) {
     padding-bottom: 100px;
+  }
+
+  @include media-max($breakpoint_sm) {
+    padding-top: 30px;
+    padding-bottom: 115px;
   }
 }
 

@@ -8,7 +8,7 @@ import test from './test';
 import popup from './components/popup';
 
 documentReady(() => {
-  AOS.init();
+  // AOS.init();
   lazyImages();
   scrollTo();
   test();

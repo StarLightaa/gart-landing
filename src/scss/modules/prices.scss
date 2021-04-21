@@ -17,21 +17,37 @@
   &__container {
     padding-bottom: 93px;
 
-
     @include media-max($breakpoint_md) {
       padding-bottom: 40px;
+    }
+
+    @include media-max($breakpoint_sm) {
+      padding-top: 18px;
     }
   }
 
   &__descr {
-    margin: 35px 0 55px 0;
     font-weight: 500;
+    font-size: 16px;
     line-height: 1.2;
-    max-width: calc(100% - 286px);
+
+    @include media-max($breakpoint_sm) {
+      margin: 0 0 35px;
+      font-size: 14px;
+    }
+
+    @include media-min($breakpoint_sm) {
+      margin: 35px 0 55px 0;
+      max-width: calc(100% - 286px);
+    }
   }
 
   &__banner {
     margin-bottom: 92px;
+
+    @include media-min($breakpoint_sm) {
+      margin-bottom: 80px;
+    }
   }
 
   &__cards {
@@ -43,11 +59,22 @@
   &__variants {
     display: flex;
     justify-content: space-between;
+
+    @include media-max($breakpoint_sm) {
+      flex-direction: column;
+      &:not(:last-child) {
+        margin-bottom: 80px;
+      }
+    }
   }
 
   &__sidebar {
     width: 286px;
     flex-shrink: 0;
+
+    @include media-max($breakpoint_sm) {
+      width: 100%;
+    }
   }
 
   &__features {
@@ -66,12 +93,21 @@
   background-color: $color-white;
   border-radius: 8px;
 
+  @include media-max($breakpoint_sm) {
+    flex-direction: column;
+  }
+
   &__left {
     display: flex;
     align-items: center;
     background-color: $color-white;
     padding: 22px 50px 30px 34px;
     border-radius: 8px 0 0 8px;
+
+    @include media-max($breakpoint_sm) {
+      border-radius: 8px 8px 0 0;
+      align-items: flex-start;
+    }
   }
 
   &__right {
@@ -91,6 +127,10 @@
     font-size: 18px;
     line-height: 1.2;
     margin-bottom: 7px;
+
+    @include media-max($breakpoint_sm) {
+      margin-bottom: 15px;
+    }
   }
 
   &__text {
@@ -102,6 +142,21 @@
     height: 100%;
     padding: 0 35px;
     border-radius: 0 8px 8px 0;
+
+    @include media-max($breakpoint_sm) {
+      width: 100%;
+      height: 79px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0 0 8px 8px;
+    }
+
+    svg {
+      @include media-max($breakpoint_sm) {
+        margin-left: 15px;
+      }
+    }
   }
 }
 
@@ -120,6 +175,10 @@
 
     &-icon {
       margin-right: 29px;
+    }
+
+    @include media-max($breakpoint_sm) {
+      font-size: 18px;
     }
   }
 
@@ -260,6 +319,12 @@
   padding-right: 61px;
   margin-bottom: 15px;
 
+  @include media-max($breakpoint_sm) {
+    height: 68px;
+    width: 100%;
+    margin-bottom: 19px;
+  }
+
   &__icon {
     margin-right: 24px;
     width: 29px;
@@ -289,7 +354,6 @@
 }
 
 .prices-more {
-
   text-align: center;
 
   &__text {
@@ -299,6 +363,10 @@
     line-height: 1.1;
     background-color: $color-white;
     border-radius: 8px 8px 0 0;
+
+    @include media-max($breakpoint_sm) {
+      padding: 29px 75px;
+    }
   }
 
   &__link {

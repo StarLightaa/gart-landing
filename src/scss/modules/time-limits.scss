@@ -6,7 +6,7 @@
     content: '';
     position: absolute;
     left: 0;
-    bottom: 0px;
+    bottom: 1px;
     width: 100%;
     height: 100%;
     background-color: $color-accent;
@@ -30,6 +30,11 @@
     @include media-max($breakpoint_lg) {
       height: 150px;
     }
+
+    @include media-max($breakpoint_sm) {
+      height: 95px;
+      clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    }
   }
 }
 
@@ -37,6 +42,17 @@
   &__container {
     padding-top: 55px;
     padding-bottom: 302px;
+
+    @include media-max($breakpoint_sm) {
+      padding-top: 37px;
+      padding-bottom: 145px;
+    }
+  }
+
+  &__title {
+    @include media-max($breakpoint_sm) {
+      margin-bottom: 40px;
+    }
   }
 
   &__list {
@@ -46,6 +62,11 @@
     @include media-max($breakpoint_lg) {
       flex-wrap: wrap;
       row-gap: 50px;
+    }
+
+    @include media-max($breakpoint_sm) {
+      padding: 0;
+      row-gap: 41px;
     }
   }
 
@@ -60,6 +81,16 @@
         order: -1;
       }
     }
+
+    @include media-max($breakpoint_sm) {
+      margin: 0 auto;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+      &:nth-of-type(4) {
+        order: 0;
+      }
+    }
     // &-icon {
     //   display: flex;
     //   align-items: center;
@@ -71,21 +102,30 @@
     //   background-position: 0 0;
     // }
 
-    &::before {
-      content: '';
-      width: 120px;
-      height: 89px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: translateX(-75%);
-      background-image: url('../images/masks/time-limits-ghost.svg');
-      background-repeat: no-repeat;
-      background-position: 0 0;
+    &:nth-of-type(even) &__icon {
+      transform: translateY(-7px);
+      &::before {
+        transform: translate(-75%, 7px);
+      }
     }
 
     &__icon {
+      display: inline-block;
+      position: relative;
       margin-bottom: 11px;
+
+      &::before {
+        content: '';
+        width: 120px;
+        height: 89px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-75%);
+        background-image: url('../images/masks/time-limits-ghost.svg');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+      }
     }
 
     &__title {
@@ -93,19 +133,27 @@
       font-size: 14px;
       line-height: 1.2;
       margin-bottom: 28px;
+
+      @include media-max($breakpoint_sm) {
+        br {
+          display: none;
+        }
+        margin-bottom: 15px;
+      }
     }
 
     &__text {
-      font-weight: 500;
+      font-weight: 400;
       font-size: 12px;
       line-height: 1.2;
+
+      @include media-max($breakpoint_sm) {
+        font-weight: 400;
+        font-size: 14px;
+      }
     }
 
-    &:nth-of-type(even) {
-      transform: translateY(-7px);
-      &::before {
-        transform: translate(-75%, 7px);
-      }
+    @include media-min($breakpoint_sm) {
       .time-limits__item__title {
         transform: translateY(-171px);
       }
@@ -120,7 +168,7 @@
       height: 82px;
       background-image: url('../images/masks/time-limits-grey.svg');
       background-repeat: no-repeat;
-      background-position: 0 0;
+      background-position: center;
 
       font-weight: 500;
       font-size: 14px;
@@ -135,17 +183,22 @@
         margin-right: 18px;
       }
 
-      &::before {
-        content: '';
-        width: 120px;
-        height: 89px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translateX(-75%);
-        background-image: url('../images/masks/time-limits-ghost.svg');
-        background-repeat: no-repeat;
-        background-position: 0 0;
+      // &::before {
+      //   content: '';
+      //   width: 120px;
+      //   height: 89px;
+      //   position: absolute;
+      //   top: 0;
+      //   left: 0;
+      //   background-image: url('../images/masks/time-limits-ghost.svg');
+      //   background-repeat: no-repeat;
+      //   background-position: 0 0;
+      // }
+
+      @include media-max($breakpoint_sm) {
+        order: -1;
+        width: 100%;
+        justify-content: center;
       }
     }
   }

@@ -22,13 +22,17 @@
     background-color: $color-grey;
     z-index: -1;
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+
+    @include media-max($breakpoint_sm) {
+      height: 95px;
+      clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    }
   }
 }
 
 .features {
   &__container {
     overflow-x: hidden;
-    transform: translateY(-40px);
     padding-bottom: 242px;
 
     @include media-max($breakpoint_xl) {
@@ -42,6 +46,16 @@
     @include media-max($breakpoint_md) {
       padding-bottom: 80px;
     }
+
+    @include media-max($breakpoint_sm) {
+      padding-top: 18px;
+      padding-bottom: 123px;
+    }
+
+    @include media-min($breakpoint_sm) {
+      transform: translateY(-40px);
+    }
+
   }
   &__title {
     color: $color-grey;

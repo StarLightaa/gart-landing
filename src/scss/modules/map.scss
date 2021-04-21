@@ -11,6 +11,10 @@
     padding-bottom: 37px;
     display: flex;
     flex-direction: column;
+
+    @include media-max($breakpoint_sm) {
+      padding-top: 26px;
+    }
   }
 
   &__content {
@@ -19,8 +23,13 @@
 
   &__descr {
     margin: 0;
+    font-weight: 500;
     font-size: 22px;
     line-height: 1.1;
+
+    @include media-max($breakpoint_sm) {
+      font-size: 18px;
+    }
   }
 
   &__bottom {
@@ -41,6 +50,18 @@
   background-color: $color-grey;
   border-radius: 5px;
   box-shadow: 0 24px 40px rgba($color: $color-grey, $alpha: .2);
+  max-width: 100%;
+
+  &--centered {
+    @include media-max($breakpoint_sm) {
+      text-align: center;
+    }
+  }
+
+  @include media-max($breakpoint_lg) {
+    padding: 17px 25px 24px;
+    width: 100%;
+  }
 
   &__text {
     margin-bottom: 15px;
@@ -54,5 +75,9 @@
     @include media-max($breakpoint_lg) {
       align-items: center;
     }
+  }
+
+  &--search {
+    width: 100%;
   }
 }

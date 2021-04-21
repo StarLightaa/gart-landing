@@ -17,25 +17,40 @@
   &__container {
     position: relative;
     padding-bottom: 115px;
+
+    @include media-max($breakpoint_sm) {
+      transform: translateY(-120px);
+      padding-bottom: 0;
+    }
   }
 
   &__banner {
     position: absolute;
     top: -370px;
     right: 20px;
+
+    @include media-max($breakpoint_sm) {
+      position: initial;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin-bottom: 40px;
+    }
   }
 
   &__title {
     margin-bottom: 133px;
+
+    @include media-max($breakpoint_sm) {
+      margin-bottom: 29px;
+    }
   }
 
   &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 43px 20px;
-    // display: flex;
-    // flex-wrap: wrap;
-    // gap: 43px;
 
     @include media-max($breakpoint_lg) {
       grid-template-columns: 1fr 1fr;
@@ -43,6 +58,7 @@
 
     @include media-max($breakpoint_sm) {
       grid-template-columns: 1fr;
+      gap: 9px;
     }
 
     &-row {
@@ -58,21 +74,42 @@
   &__stage {
     &:not(:last-child) {
       margin-bottom: 114px;
+
+      @include media-max($breakpoint_sm) {
+        margin-bottom: 30px;
+      }
     }
 
   }
 }
 
 .work-order-stage {
+  @include media-max($breakpoint_sm) {
+    padding-top: 25px;
+    border-top: 1px solid rgba($color: $color-grey, $alpha: .1);
+  }
+
   &__title {
     margin: 0;
     display: inline-flex;
+
+    @include media-max($breakpoint_sm) {
+      display: block;
+      margin: 0 0 26px;
+    }
+
     &--xl {
       padding-right: 17px;
       font-weight: 700;
       font-size: 50px;
       line-height: 1.1;
       margin-bottom: 29px;
+
+      @include media-max($breakpoint_sm) {
+        font-size: 40px;
+        display: block;
+        margin-bottom: 6px;
+      }
     }
 
     &--md {
@@ -110,6 +147,14 @@
     &:nth-of-type(7) { order: 7; }
     &:nth-of-type(8) { order: 8; }
     &:nth-of-type(9) { order: 9; }
+  }
+
+  @include media-max($breakpoint_sm) {
+    max-width: 400px;
+  }
+
+  @include media-max($breakpoint_xs) {
+    max-width: initial;
   }
 
   &__icon {

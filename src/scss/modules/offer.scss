@@ -11,6 +11,14 @@
     background-color: $color-accent;
     clip-path: polygon(0 70%, 100% 24%, 100% 100%, 0% 100%);
     z-index: -1;
+
+    @include media-max($breakpoint_sm) {
+      bottom: -5px;
+      height: 505px;
+      clip-path: polygon(0 50%, 100% 31%, 100% 100%, 0% 100%);
+    }
+
+
   }
 
   &:after {
@@ -23,6 +31,12 @@
     background-color: $color-whitegrey;
     clip-path: polygon(0 70%, 100% 0, 100% 30%, 0% 100%);
     z-index: -1;
+
+    @include media-max($breakpoint_sm) {
+      bottom: 248px;
+      height: 471px;
+      clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
+    }
   }
 
   &__container {
@@ -36,6 +50,11 @@
     @include media-max($breakpoint_md) {
       margin-top: 100px;
       padding-bottom: 80px;
+    }
+
+    @include media-max($breakpoint_sm) {
+      margin-top: 107px;
+      padding-bottom: 38px;
     }
   }
 }
