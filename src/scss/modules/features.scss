@@ -1,15 +1,55 @@
 .features-section {
   position: relative;
-  // height: 2500px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: $color-whitegrey;
+    z-index: -1;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 430px;
+    background-color: $color-grey;
+    z-index: -1;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  }
 }
 
 .features {
   &__container {
+    overflow-x: hidden;
+    transform: translateY(-40px);
     padding-bottom: 242px;
+
+    @include media-max($breakpoint_xl) {
+      padding-bottom: 150px;
+    }
+
+    @include media-max($breakpoint_lg) {
+      padding-bottom: 120px;
+    }
+
+    @include media-max($breakpoint_md) {
+      padding-bottom: 80px;
+    }
   }
   &__title {
     color: $color-grey;
     margin-bottom: 41px !important;
+
+    @include media-max($breakpoint_sm) {
+      margin-bottom: 27px !important;
+    }
   }
 
   &__descr {
@@ -17,11 +57,32 @@
     font-size: 24px;
     line-height: 1.2;
     margin-bottom: 78px;
+
+    @include media-max($breakpoint_lg) {
+      font-size: 20px;
+    }
+
+    @include media-max($breakpoint_md) {
+      font-size: 14px;
+    }
+
+    @include media-max($breakpoint_sm) {
+      margin-bottom: 29px;
+      br {
+        display: none;
+      }
+    }
   }
 
   &__cards {
     display: flex;
     justify-content: space-between;
+    gap: 30px 20px;
+
+    @include media-max($breakpoint_sm) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
 
@@ -32,6 +93,10 @@
   &__top {
     padding: 37px 30px 39px;
     background-color: $color-white;
+
+    @include media-max($breakpoint_sm) {
+      padding: 28px 32px 39px 22px;
+    }
 
     &--blue {
       background-color: $color-accent;
@@ -46,6 +111,10 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 1.1;
+
+    @include media-max($breakpoint_sm) {
+      font-size: 16px;
+    }
   }
 
   &__item {
@@ -67,6 +136,12 @@
     background-color: #E75855;
     border-radius: 100%;
     flex-shrink: 0;
+
+    @include media-max($breakpoint_sm) {
+      margin-right: 10px;
+      width: 23px;
+      height: 23px;
+    }
 
     svg {
       width: 9px;
@@ -95,6 +170,10 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
+
+    @include media-max($breakpoint_sm) {
+      font-size: 12px;
+    }
   }
 
   &__images {

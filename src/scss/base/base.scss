@@ -133,4 +133,8 @@ img {
   position: absolute;
   top: 0;
   right: 0;
+
+  @include media-max($breakpoint_sm) {
+    display: none;
+  }
 }

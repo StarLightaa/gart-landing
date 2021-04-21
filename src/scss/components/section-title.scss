@@ -4,11 +4,27 @@
   line-height: 1;
   text-transform: uppercase;
 
+  @include media-max($breakpoint_lg) {
+    font-size: 35px;
+  }
+
+  @include media-max($breakpoint_md) {
+    font-size: 26px;
+  }
+
   p {
     margin: 14px 0 20px;
     font-size: 75px;
     line-height: 1;
     text-transform: uppercase;
     color: inherit;
+
+    @include media-max($breakpoint_lg) {
+      font-size: 55px;
+    }
+
+    @include media-max($breakpoint_md) {
+      font-size: 40px;
+    }
   }
 }

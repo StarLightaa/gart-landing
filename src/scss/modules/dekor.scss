@@ -10,22 +10,69 @@
 }
 
 .offer-section__bg-whitegrey {
-  height: 610px;
-  top: 493px;
-  left: 0;
-  background-image: url(../images/masks/main-bg-whitegrey.svg);
+  // height: 610px;
+  // top: 493px;
+  // left: 0;
+  // background-image: url(../images/masks/main-bg-whitegrey.svg);
 
-  // @include media-max($breakpoint_xs) {
-  //   top: 260px;
-  //   background-image: url(../images/masks/mobile/sm-main-bg-whitegrey.svg);
-  // }
+  top: 494px;
+  height: 610px;
+  background-color: $color-whitegrey;
+  clip-path: polygon(0 70%, 100% 0, 100% 30%, 0% 100%);
+
+  @include media-max($breakpoint_xl) {
+    top: 450px;
+    height: 440px;
+  }
+
+  @include media-max($breakpoint_lg) {
+    top: 400px;
+  }
+
+  @include media-max($breakpoint_md) {
+
+  }
+
+  @include media-max($breakpoint_sm) {
+    top: 365px;
+    // width: 414px;
+    height: 470px;
+    background-color: $color-whitegrey;
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+  }
+
+  @include media-max($breakpoint_xs) {
+
+  }
 }
 
 .experience__bg-blue {
-  height: 1574px;
-  top: 669px;
-  left: 0;
-  background-image: url(../images/masks/main-bg-blue.svg);
+  top: 675px;
+  height: 1523px;
+  background-color: #005aff;
+  clip-path: polygon(0 27%, 100% 0, 100% 73%, 0% 100%);
+
+  @include media-max($breakpoint_xl) {
+    top: 583px;
+    clip-path: polygon(0 26%, 100% 0, 100% 71%, 0% 100%);
+    height: 1190px;
+  }
+
+  @include media-max($breakpoint_lg) {
+    top: 533px;
+  }
+
+  @include media-max($breakpoint_md) {
+
+  }
+
+  @include media-max($breakpoint_sm) {
+    top: 745px;
+    // width: 414px;
+    height: 645px;
+    background-color: #005aff;
+    clip-path: polygon(0 14%, 100% 0, 100% 86%, 0% 100%);
+  }
 
   // @include media-max($breakpoint_xs) {
   //   background-image: url(../images/masks/mobile/sm-main-bg-blue.svg);
@@ -34,10 +81,24 @@
 }
 
 .experience__bg-grey {
-  height: 882px;
   top: 1385px;
-  left: 0;
-  background-image: url(../images/masks/main-bg-grey.svg);
+  height: 812px;
+  background-color: #37455c;
+  clip-path: polygon(0 0%, 100% 0, 100% 55%, 0% 100%);
+
+  @include media-max($breakpoint_xl) {
+    top: 1190px;
+    height: 900px;
+    clip-path: polygon(0 0%, 100% 0, 100% 54%, 0% 67%);
+  }
+
+  @include media-max($breakpoint_lg) {
+    top: 1100px;
+  }
+
+  @include media-max($breakpoint_md) {
+
+  }
 
   // @include media-max($breakpoint_xs) {
   //   background-image: url(../images/masks/mobile/sm-main-bg-grey.svg);

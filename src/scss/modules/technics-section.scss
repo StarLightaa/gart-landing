@@ -1,15 +1,44 @@
 .technics-section {
   position: relative;
   color: $color-white;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: $color-grey;
+    z-index: -1;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 420px;
+    background-color: $color-whitegrey;
+    z-index: -1;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  }
 }
 
 .technics {
   &__container {
-    padding-bottom: 153px;
+    overflow-x: hidden;
+    transform: translateY(-40px);
+    padding-bottom: 295px;
   }
 
   &__title {
     margin-bottom: 24px;
+
+    @include media-max($breakpoint_sm) {
+      margin-bottom: 40px;
+    }
   }
 
   &__descr {
@@ -17,6 +46,15 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 1.4;
+
+    @include media-max($breakpoint_md) {
+      font-size: 20px;
+    }
+
+    @include media-max($breakpoint_sm) {
+      font-size: 16px;
+      margin-bottom: 7px;
+    }
   }
 }
 
@@ -26,6 +64,23 @@
     font-weight: 700;
     font-size: 139px;
     line-height: 1.2;
+
+    @include media-max($breakpoint_xl) {
+      font-size: 119px;
+    }
+
+    @include media-max($breakpoint_lg) {
+      font-size: 96px;
+    }
+
+    @include media-max($breakpoint_md) {
+      font-size: 80px;
+    }
+
+    @include media-max($breakpoint_sm) {
+      font-size: 45px;
+      letter-spacing: -0.01em;
+    }
   }
 
   &__img {

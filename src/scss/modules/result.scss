@@ -1,6 +1,40 @@
+.result-section {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 420px;
+    background-color: $color-whitegrey;
+    z-index: -1;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+
+    @include media-max($breakpoint_xl) {
+      height: 240px;
+    }
+    @include media-max($breakpoint_lg) {
+      height: 180px;
+    }
+  }
+}
+
 .result {
   &__container {
-    margin-bottom: 420px;
+    padding-bottom: 420px;
+
+    @include media-max($breakpoint_xl) {
+      padding-bottom: 210px;
+    }
+    @include media-max($breakpoint_lg) {
+      padding-bottom: 150px;
+    }
+
+    @include media-max($breakpoint_md) {
+      padding-bottom: 100px;
+    }
   }
 
   &__title {
@@ -16,6 +50,16 @@
     display: flex;
     align-items: center;
 
+    @include media-max($breakpoint_lg) {
+      margin-bottom: 60px;
+      font-size: 18px;
+    }
+
+    @include media-max($breakpoint_md) {
+      margin-bottom: 40px;
+      font-size: 16px;
+    }
+
     span {
       padding: 10px;
       background-color: $color-accent;
@@ -28,11 +72,20 @@
   &__body {
     display: flex;
     justify-content: space-between;
+
+    @include media-max($breakpoint_md) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__img {
     flex-shrink: 0;
     width: 370px;
+
+    @include media-max($breakpoint_md) {
+      order: -1;
+    }
   }
 
   &__list {
@@ -43,7 +96,6 @@
 .result {
   display: flex;
   align-items: center;
-
 
   &__icon {
     margin-right: 42px;
