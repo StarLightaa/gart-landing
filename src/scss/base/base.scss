@@ -1,6 +1,7 @@
 @import 'normalize.css/normalize';
 
 @include focus-visible;
+@import './libs/swiper-bundle.min';
 @import 'aos/dist/aos';
 
 *,

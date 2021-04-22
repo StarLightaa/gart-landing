@@ -7,9 +7,14 @@
   border-radius: 3px;
   font-weight: 500;
   font-size: 16px;
+  transition: background-color .3s;
 
   &--accent {
     background-color: $color-accent;
     color: $color-white;
+
+    &:hover, &:focus-within {
+      background-color: darken($color: $color-accent, $amount: 5%);
+    }
   }
 }

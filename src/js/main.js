@@ -1,6 +1,7 @@
 import 'focus-visible';
 import AOS from 'aos';
 import IMask from 'imask';
+import Swiper from './libs/swiper-bundle.min';
 import lazyImages from './modules/lazyImages';
 import scrollTo from './modules/scrollTo';
 import documentReady from './helpers/documentReady';
@@ -22,5 +23,26 @@ documentReady(() => {
       lazy: true,  // make placeholder always visible
       // placeholderChar: '#'     // defaults to '_'
     });
+  });
+
+  new Swiper('.prices-slider', {
+    containerModifierClass: 'prices-slider-',
+    slidesPerView: 'auto',
+    spaceBetween: 18,
+    breakpoints: {
+      // when window width is >= 1200px
+      1200: {
+        allowTouchMove: false,
+      },
+    },
+    navigation: {
+      nextEl: '.prices-next-btn',
+      prevEl: '.prices-prev-btn',
+    },
+    pagination: {
+      el: '.prices-pag',
+      type: 'bullets',
+      clickable: true,
+    },
   });
 });
