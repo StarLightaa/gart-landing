@@ -5,6 +5,8 @@
   font-weight: 500;
   white-space: nowrap;
 
+  transition: color .3s, transform .3s;
+
   svg {
     width: 21px;
     height: 21px;
@@ -18,5 +20,10 @@
 
   span {
     color: $color-accent;
+  }
+
+  &:hover, &:focus-within {
+    text-decoration: underline;
+    animation: heartbeat 0.6s infinite;
   }
 }

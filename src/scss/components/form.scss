@@ -117,12 +117,28 @@
     border-radius: 8px;
     color: $color-white;
     background-color: $color-accent;
+    border: 1px solid transparent;
     font-weight: 500;
+    transition: box-shadow .3s, color .3s;
 
     svg {
       display: block;
       width: 25px;
       height: 15px;
+      stroke: $color-white;
+      path { stroke: $color-white; }
+    }
+
+    &:hover,&:focus-within {
+      box-shadow: inset 0 0 0 2em $color-white;
+      border-color: $color-accent;
+      color: $color-accent;
+      animation: jittery 4s infinite;
+
+      svg {
+        stroke: $color-accent;
+        path { stroke: $color-accent; }
+      }
     }
   }
 }

@@ -4,10 +4,18 @@
   flex-wrap: wrap;
 
   &__item {
+    transition: transform .3s;
+    &:hover, &:focus-within {
+      transform: scale(1.1);
+    }
+  }
+
+  &__link {
     position: relative;
     font-weight: 700;
     font-size: 16px;
     padding-left: 15px;
+    transition: color .3s;
 
     &::before {
       content: '';
@@ -24,17 +32,29 @@
       &::before {
         background-color: #7D3DAF;
       }
+      &:hover,
+      &:focus {
+        color: #7D3DAF;
+      }
     }
 
     &--whatsapp {
       &::before {
         background-color: #1FB69F;
       }
+      &:hover,
+      &:focus {
+        color: #1FB69F;
+      }
     }
 
     &--telegram {
       &::before {
         background-color: #2CA0DA;
+      }
+      &:hover,
+      &:focus {
+        color: #2CA0DA;
       }
     }
   }

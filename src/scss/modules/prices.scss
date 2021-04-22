@@ -153,6 +153,8 @@
     }
 
     svg {
+      stroke: $color-white;
+      path { stroke: $color-white; }
       @include media-max($breakpoint_sm) {
         margin-left: 15px;
       }
