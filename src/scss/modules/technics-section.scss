@@ -110,10 +110,12 @@
       position: absolute;
       top: -173px;
       left: -166px;
+      height: 845px;
 
       @include media-max($breakpoint_sm) {
         top: 0;
-        left: 0;
+        left: -60px;
+        height: 390px;
       }
     }
 
